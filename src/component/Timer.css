@@ -11,24 +11,40 @@
 
 .left_hour {
   padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 1px solid;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.left_minutes {
+  padding: 10px;
   font-size: 40px;
   border-radius: 10px;
   border: 1px solid;
   color: white;
-  margin: 30px;
-}
-
-.left_minutes {
-  color: white;
-  margin: 30px;
+  text-align: center;
+  margin: 10px;
 }
 
 .right_sec {
+  padding: 10px;
+  font-size: 60px;
+  border-radius: 10px;
+  border: 1px solid;
   color: white;
-  margin: 30px;
+  text-align: center;
+  margin: 10px;
 }
 
 .right_amPm {
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 1px solid;
   color: white;
-  margin: 30px;
+  text-align: center;
+  margin: 10px;
 }
