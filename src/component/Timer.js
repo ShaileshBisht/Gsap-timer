@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Timer.css";
 
 function Timer() {
-  const [date, setDate] = useState(new Date());
-  const [hour, setHour] = useState(date.getHours());
-  const [minutes, setMinutes] = useState(date.getMinutes());
-  const [sec, setSec] = useState(date.getSeconds());
+  const [timer, setTimer] = useState(new Date());
+  const updateTime = () => {
+    setTimer(new Date());
+  };
 
-  console.log(hour);
-  console.log(minutes);
-  console.log(sec);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      updateTime();
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className="timer">
-      <h1>hello</h1>
+      <h1>{timer.toLocaleTimeString()}</h1>
     </div>
   );
 }
