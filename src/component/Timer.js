@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Timer.css";
-import Tilt from "react-vanilla-tilt";
 import Card from "card-vibes";
 
 function Timer() {
@@ -22,7 +21,13 @@ function Timer() {
   return (
     <Card
       className="card"
-      style={{ width: "40%", backdropFilter: "blur(8px)", height: "300px" }}
+      style={{
+        width: "40%",
+        backdropFilter: "blur(8px)",
+        height: "350px",
+        border: "1px solid white",
+        borderRadius: "20px",
+      }}
     >
       <div className="timer">
         <div className="timer_left">
@@ -42,6 +47,7 @@ function Timer() {
           </h1>
         </div>
       </div>
+      <h1 className="date">{timer.toLocaleDateString()}</h1>
     </Card>
   );
 }
