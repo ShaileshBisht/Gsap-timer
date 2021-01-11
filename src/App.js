@@ -15,11 +15,21 @@ function App() {
       .from(
         ".gsap_ani",
         {
-          duration: 1,
+          duration: 1.5,
           y: "-300px",
           opacity: 0,
-          stagger: 0.8,
+          stagger: 1,
           ease: "bounce.out(1, 0.3)",
+        },
+        "-=1"
+      )
+      .from(
+        ".date",
+        {
+          duration: 2,
+          y: "-400px",
+          opacity: 0,
+          ease: "elastic.out(1, 0.3)",
         },
         "-=2"
       );
