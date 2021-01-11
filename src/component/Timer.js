@@ -23,7 +23,7 @@ function Timer() {
       className="card"
       style={{
         width: "40%",
-        backdropFilter: "blur(8px)",
+        backdropFilter: "blur(11px)",
         height: "350px",
         border: "1px solid white",
         borderRadius: "20px",
@@ -31,18 +31,18 @@ function Timer() {
     >
       <div className="timer">
         <div className="timer_left">
-          <h1 className="left_hour">
+          <h1 className="left_hour gsap_ani">
             {timer.toLocaleTimeString().slice(0, 1)}
           </h1>
-          <h1 className="left_minutes">
+          <h1 className="left_minutes gsap_ani">
             {timer.toLocaleTimeString().slice(2, 4)}
           </h1>
         </div>
         <div className="timer_right">
-          <h1 className="right_sec">
+          <h1 className="right_sec gsap_ani">
             {timer.toLocaleTimeString().slice(5, 7)}
           </h1>
-          <h1 className="right_amPm">
+          <h1 className="right_amPm gsap_ani">
             {timer.toLocaleTimeString().slice(8, 11)}
           </h1>
         </div>
