@@ -1,0 +1,9 @@
+.timer {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  border-radius: 10px solid;
+}

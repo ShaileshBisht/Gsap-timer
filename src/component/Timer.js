@@ -20,6 +20,7 @@ function Timer() {
   return (
     <div className="timer">
       <h1>{timer.toLocaleTimeString()}</h1>
+      <h1>{timer.toLocaleTimeString().slice(5, 7)}</h1>
     </div>
   );
 }
