@@ -4,6 +4,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(8px);
-  border-radius: 10px solid;
+  backdrop-filter: blur(15px);
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.left_hour {
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+  color: white;
+  margin: 30px;
+}
+
+.left_minutes {
+  color: white;
+  margin: 30px;
+}
+
+.right_sec {
+  color: white;
+  margin: 30px;
+}
+
+.right_amPm {
+  color: white;
+  margin: 30px;
 }
