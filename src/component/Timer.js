@@ -19,8 +19,14 @@ function Timer() {
 
   return (
     <div className="timer">
-      <h1>{timer.toLocaleTimeString()}</h1>
-      <h1>{timer.toLocaleTimeString().slice(5, 7)}</h1>
+      <div className="timer_left">
+        <h1>{timer.toLocaleTimeString().slice(0, 1)}</h1>
+        <h1>{timer.toLocaleTimeString().slice(2, 4)}</h1>
+      </div>
+      <div className="timer_right">
+        <h1>{timer.toLocaleTimeString().slice(5, 7)}</h1>
+        <h1>{timer.toLocaleTimeString().slice(8, 11)}</h1>
+      </div>
     </div>
   );
 }
