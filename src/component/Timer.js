@@ -23,7 +23,7 @@ function Timer() {
       className="card"
       style={{
         width: "40%",
-        backdropFilter: "blur(11px)",
+        backdropFilter: "blur(13px)",
         height: "350px",
         border: "1px solid white",
         borderRadius: "20px",

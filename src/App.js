@@ -9,7 +9,7 @@ function App() {
     t1.from(".app", { duration: 1, width: "0%", opacity: 0 })
       .from(".card", {
         duration: 2,
-        x: "200px",
+        x: "300px",
         opacity: 0,
       })
       .from(
