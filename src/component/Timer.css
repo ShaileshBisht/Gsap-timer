@@ -1,6 +1,4 @@
-.card {
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
 .timer {
   display: flex;
   align-items: center;
@@ -18,6 +16,7 @@
 }
 
 .left_hour {
+  font-family: "Hachi Maru Pop", cursive;
   padding: 10px;
   font-size: 30px;
   border-radius: 10px;
@@ -28,6 +27,7 @@
 }
 
 .left_minutes {
+  font-family: "Hachi Maru Pop", cursive;
   padding: 10px;
   font-size: 40px;
   border-radius: 10px;
@@ -44,6 +44,7 @@
 }
 
 .right_sec {
+  font-family: "Hachi Maru Pop", cursive;
   padding: 10px;
   font-size: 90px;
   border-radius: 10px;
@@ -54,6 +55,7 @@
 }
 
 .right_amPm {
+  font-family: "Hachi Maru Pop", cursive;
   padding: 10px;
   font-size: 30px;
   border-radius: 10px;
@@ -64,6 +66,7 @@
 }
 
 .date {
+  font-family: "Hachi Maru Pop", cursive;
   text-align: center;
   color: white;
   letter-spacing: 6px;
