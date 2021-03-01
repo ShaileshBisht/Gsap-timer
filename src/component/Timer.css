@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
 .timer {
-  color: yellow;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +70,4 @@
   text-align: center;
   color: white;
   letter-spacing: 6px;
-}
-h1 {
-  color: yellow;
 }

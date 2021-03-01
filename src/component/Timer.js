@@ -35,24 +35,26 @@ function Timer() {
     >
       <div className="timer">
         <div className="timer_left">
-          <h1 className="left_hour gsap_ani">
+          <h1 className="left_hour gsap_ani" style={{ color: "yellow" }}>
             {formatTime(timer.toLocaleTimeString())[0]}
             {/* {timer.toLocaleTimeString().slice(0, 1)} */}
           </h1>
-          <h1 className="left_minutes gsap_ani">
+          <h1 className="left_minutes gsap_ani" style={{ color: "yellow" }}>
             {formatTime(timer.toLocaleTimeString())[1]}
           </h1>
         </div>
         <div className="timer_right">
-          <h1 className="right_sec gsap_ani">
+          <h1 className="right_sec gsap_ani" style={{ color: "yellow" }}>
             {formatTime(timer.toLocaleTimeString())[2]}
           </h1>
-          <h1 className="right_amPm gsap_ani">
+          <h1 className="right_amPm gsap_ani" style={{ color: "yellow" }}>
             {formatTime(timer.toLocaleTimeString())[3]}
           </h1>
         </div>
       </div>
-      <h1 className="date">{timer.toLocaleDateString()}</h1>
+      <h1 className="date" style={{ color: "yellow" }}>
+        {timer.toLocaleDateString()}
+      </h1>
     </Card>
   );
 }
